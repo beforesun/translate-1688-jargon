@@ -20,7 +20,7 @@ description: Convert everyday buyer language, vague product descriptions, photos
 6. 信息不足但仍可搜索时，先给可用候选，再只追问最能改变结果的 1–3 个问题。
 7. 用户需要联系供应商时，补充一段可直接复制的询盘话术。
 
-需要品类拆词、常见供应链词或输出示例时，读取 [references/translation-playbook.md](references/translation-playbook.md)。处理具体类目时，读取 [references/category-lexicon.md](references/category-lexicon.md)；用户提供或需要筛选克重、支数、壁厚、尺寸、公差等参数时，再读取 [references/specification-lexicon.md](references/specification-lexicon.md)。用户要找产业带、平替、看图搜款、筛供应商或拿货沟通时，读取 [references/sourcing-playbook.md](references/sourcing-playbook.md)。
+需要品类拆词、常见供应链词或输出示例时，读取 [references/translation-playbook.md](references/translation-playbook.md)。处理具体类目时，读取 [references/category-lexicon.md](references/category-lexicon.md)；用户提供或需要筛选克重、支数、壁厚、尺寸、公差等参数时，再读取 [references/specification-lexicon.md](references/specification-lexicon.md)。用户要找产业带、平替、看图搜款、筛供应商或拿货沟通时，读取 [references/sourcing-playbook.md](references/sourcing-playbook.md)。涉及建材、汽配、食品或其他安全/合规敏感用途时，必须读取 [references/regulated-categories.md](references/regulated-categories.md)。
 
 ## 翻译规则
 
@@ -36,6 +36,7 @@ description: Convert everyday buyer language, vague product descriptions, photos
 - 不是每条搜索式都必须包含材质或工艺。未知材质时优先使用品类、结构和用途；产业带搜索可以只用地名与品类。精确参数仅在用户提供、图片可证或明确作为候选区间时加入。
 - 不承诺“源头厂”真实性。提醒用户用经营年限、深度验厂、工厂档案、主营占比、起订量和样品进行复核。
 - 产业带地名仅作为扩大召回的候选字段；产业分布会变化，同一地区也存在贸易商。未核验时使用“可尝试”，不要称为固定唯一产地。
+- 建材、汽配、食品、母婴、医疗借用词等高约束类目，优先保留本品类术语，不输出未经专业验证的跨界替用结论。法规、许可、标准和认证可能变化；只提示核验方向，不凭记忆作合规判定。
 
 ## 默认输出
 

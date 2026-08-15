@@ -227,6 +227,7 @@ PC 硬壳 6.7寸 ODM 源头工厂……
 │   └── openai.yaml
 └── references/
     ├── category-lexicon.md
+    ├── regulated-categories.md
     ├── sourcing-playbook.md
     ├── specification-lexicon.md
     └── translation-playbook.md
@@ -234,6 +235,7 @@ PC 硬壳 6.7寸 ODM 源头工厂……
 
 - `SKILL.md`：跨 Agent 的核心工作流与输出规范
 - `category-lexicon.md`：瑜伽服、卫衣/T 恤、塑料收纳、手机壳等高频类目候选词
+- `regulated-categories.md`：建材、汽配、食品及母婴/医疗借用词的高约束搜索与核验规则
 - `translation-playbook.md`：拆词公式、交易术语、示例和质量校验
 - `sourcing-playbook.md`：产业带候选、去标签搜索、以图搜款、供应商核验和拿样话术
 - `specification-lexicon.md`：服饰、家纺、塑料、手机壳、五金和鞋类的参数维度与使用约束
