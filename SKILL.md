@@ -20,7 +20,7 @@ description: Convert everyday buyer language, vague product descriptions, photos
 6. 信息不足但仍可搜索时，先给可用候选，再只追问最能改变结果的 1–3 个问题。
 7. 用户需要联系供应商时，补充一段可直接复制的询盘话术。
 
-需要品类拆词、常见供应链词或输出示例时，读取 [references/translation-playbook.md](references/translation-playbook.md)。处理服装、收纳塑料件或手机壳时，再读取 [references/category-lexicon.md](references/category-lexicon.md)。用户要找产业带、平替、看图搜款、筛供应商或拿货沟通时，读取 [references/sourcing-playbook.md](references/sourcing-playbook.md)。
+需要品类拆词、常见供应链词或输出示例时，读取 [references/translation-playbook.md](references/translation-playbook.md)。处理瑜伽服、卫衣/T 恤、收纳塑料件或手机壳时，再读取 [references/category-lexicon.md](references/category-lexicon.md)。用户要找产业带、平替、看图搜款、筛供应商或拿货沟通时，读取 [references/sourcing-playbook.md](references/sourcing-playbook.md)。
 
 ## 翻译规则
 

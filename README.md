@@ -232,7 +232,7 @@ PC 硬壳 6.7寸 ODM 源头工厂……
 ```
 
 - `SKILL.md`：跨 Agent 的核心工作流与输出规范
-- `category-lexicon.md`：服装、塑料收纳、手机壳等高频类目候选词
+- `category-lexicon.md`：瑜伽服、卫衣/T 恤、塑料收纳、手机壳等高频类目候选词
 - `translation-playbook.md`：拆词公式、交易术语、示例和质量校验
 - `sourcing-playbook.md`：产业带候选、去标签搜索、以图搜款、供应商核验和拿样话术
 
