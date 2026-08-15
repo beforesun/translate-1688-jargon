@@ -228,6 +228,7 @@ PC 硬壳 6.7寸 ODM 源头工厂……
 └── references/
     ├── category-lexicon.md
     ├── sourcing-playbook.md
+    ├── specification-lexicon.md
     └── translation-playbook.md
 ```
 
@@ -235,6 +236,7 @@ PC 硬壳 6.7寸 ODM 源头工厂……
 - `category-lexicon.md`：瑜伽服、卫衣/T 恤、塑料收纳、手机壳等高频类目候选词
 - `translation-playbook.md`：拆词公式、交易术语、示例和质量校验
 - `sourcing-playbook.md`：产业带候选、去标签搜索、以图搜款、供应商核验和拿样话术
+- `specification-lexicon.md`：服饰、家纺、塑料、手机壳、五金和鞋类的参数维度与使用约束
 
 ## 贡献
 
