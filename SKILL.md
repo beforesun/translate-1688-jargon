@@ -1,6 +1,6 @@
 ---
 name: translate-1688-jargon
-description: Convert everyday buyer language, vague product descriptions, photos, use cases, and retail names into 1688-ready Chinese industry jargon, factory terminology, search queries, specification keywords, and supplier inquiry language. Use when users ask what a product is called on 1688, want to find the source factory or 同款/平替, need 1688 search keywords, want to turn consumer wording into supplier wording, or mention 1688 黑话、行业词、采购词、源头厂、搜款、询盘、拿货、打样、起订量、贴牌、定制、OEM or ODM.
+description: Convert everyday buyer language, vague product descriptions, photos, use cases, and retail names into 1688-ready Chinese industry jargon, factory terminology, industrial-belt queries, alternative-use search terms, specification keywords, supplier screening checks, and inquiry language. Use when users ask what a product is called on 1688, want to find factories, 同源货 or 合规平替, need 1688 search keywords, want to remove retail marketing labels, compare sourcing paths, screen factories, or mention 1688 黑话、行业词、产业带、采购词、源头厂、搜款、询盘、拿货、打样、尾货、起订量、贴牌、定制、OEM or ODM.
 ---
 
 # 1688 黑话翻译
@@ -14,18 +14,19 @@ description: Convert everyday buyer language, vague product descriptions, photos
    - **标准品类词**：工厂和平台通常使用的商品名。
    - **属性词**：材质、工艺、结构、规格、适用场景和人群。
    - **交易词**：现货、混批、拿样、打样、起订量、定制、贴牌、来图来样、OEM/ODM 等。
-3. 先判断用户要“找商品”还是“挖货源”。找商品使用品类和关键属性；挖货源必须增加生产、库存或订单来源维度。
+3. 先判断用户要“找商品”“找库存”“找产业带”还是“找代工”。为不同目标生成独立搜索路径，不把所有词堆在一起。
 4. 生成由宽到窄的搜索词组合。先用 2–4 个核心词找对类目，再逐步加属性；不要一开始塞入完整自然语言句子。
 5. 对可能存在多个行业叫法的商品，给出 2–4 组候选，并说明每组适合验证什么。不要把推测包装成唯一标准答案。
 6. 信息不足但仍可搜索时，先给可用候选，再只追问最能改变结果的 1–3 个问题。
 7. 用户需要联系供应商时，补充一段可直接复制的询盘话术。
 
-需要品类拆词、常见供应链词或输出示例时，读取 [references/translation-playbook.md](references/translation-playbook.md)。处理服装、收纳塑料件或手机壳时，再读取 [references/category-lexicon.md](references/category-lexicon.md)，从候选词库中选择适用术语。
+需要品类拆词、常见供应链词或输出示例时，读取 [references/translation-playbook.md](references/translation-playbook.md)。处理服装、收纳塑料件或手机壳时，再读取 [references/category-lexicon.md](references/category-lexicon.md)。用户要找产业带、平替、看图搜款、筛供应商或拿货沟通时，读取 [references/sourcing-playbook.md](references/sourcing-playbook.md)。
 
 ## 翻译规则
 
 - 把感受词落到可验证属性：如“软乎乎”拆成面料、填充物、克重/厚度、织法或表面处理，而不是机械替换成某个术语。
 - 把零售营销词降噪：“高级感、ins 风、网红、氛围感、显瘦”等只保留为辅助风格词，优先寻找决定生产的属性。
+- 对“专用、网红、ins、轻奢、宠物专用、化妆专用”等场景标签，先保留原词完成一轮搜索，再生成去标签的基础品类词和可能的工业/商用叫法。不要假定场景替换品在材料、安全性或尺寸上等价。
 - 优先使用供应商标题中常见的短词组合；一个搜索式通常控制在 2–6 个词。
 - 优先尝试三类工厂检索公式：`面料名 + 工艺 + 品类`、`材质 + 尺寸/规格 + 尾货`、`外贸单 + 库存 + 工厂/厂家`。根据品类替换字段，不机械照抄。
 - 同时提供同义词和上游词。例如成品搜索无结果时，拆成部件、坯料、面料、包材或加工工艺。
@@ -33,6 +34,7 @@ description: Convert everyday buyer language, vague product descriptions, photos
 - 不虚构材质、国标、等级、克重、目数、支数、型号或工艺。图片无法确认时标注“待确认”。
 - 用户只给商品名时，不得擅自拼出“280g、30×20cm、食品级、6.7 寸、双面磨毛”等精确属性。把它们列为可选搜索分支或追问项。
 - 不承诺“源头厂”真实性。提醒用户用经营年限、深度验厂、工厂档案、主营占比、起订量和样品进行复核。
+- 产业带地名仅作为扩大召回的候选字段；产业分布会变化，同一地区也存在贸易商。未核验时使用“可尝试”，不要称为固定唯一产地。
 
 ## 默认输出
 
@@ -48,6 +50,8 @@ description: Convert everyday buyer language, vague product descriptions, photos
 2. 行业精搜：...
 3. 尾货/库存：...
 4. 找厂：...
+5. 产业带（有可靠候选时）：...
+6. 去标签/替代场景（适用时）：...
 
 拆词逻辑：
 - 品类：...
@@ -61,6 +65,8 @@ description: Convert everyday buyer language, vague product descriptions, photos
 
 询盘话术（需要时）：
 你好，想采购……请问……
+
+供应商核验（需要时）：...
 ```
 
 若用户给出多件商品，用表格输出“日常说法 / 行业词 / 搜索式 / 待确认项”。若用户只要关键词，不展开教学说明。
