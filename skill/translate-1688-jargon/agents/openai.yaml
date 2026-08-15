@@ -1,0 +1,4 @@
+interface:
+  display_name: "1688 黑话翻译"
+  short_description: "把日常采购描述转换成 1688 行业搜索词与询盘话术"
+  default_prompt: "使用 $translate-1688-jargon 把我的日常商品描述转换成适合 1688 搜索和询盘的行业词。"
